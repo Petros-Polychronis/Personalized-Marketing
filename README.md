@@ -1,4 +1,4 @@
-# Personalized-Marketing
+# Personalized-Promotions
 **Keywords**: Heterogeneous Treatment Effects (HTE), Targeting, Policy Evaluation and Learning
 
 ### Summary:
