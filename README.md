@@ -17,7 +17,7 @@ I train multiple $\text{CATE}$ estimators, including *S-Learners*,*T-Learners*, 
   
 2. *Second targeting policy*: I train a weighted classification model using the covariates $X$ and the label $Y'$, where $Y' =1$ if $\hat{\tau}(x) \geq \frac{C}{R}$ and $0$ otherwise. The weights are proportional to the magnitude of the treatment effect. In particular the weights are calculated based on the expected profit of treating a sample with covariates $X$, $R\cdot \hat{\tau}(x) -C$. They higher this number is, the higher the exected profits/ROI of the promotions for that particular profile. It costs us more missclassifying this sample, than missclassifying another sample with a lower positive value and the second targeting policy takes that into account, whereas the first does not.  
 
-   See also Chapter 15.4 from Chernozhukov, V. & Hansen, C. & Kallus, N. & Spindler, M. & Syrgkanis, V. (2024): Applied Causal Inference Powered by ML and AI
+   See also Chapter 15.4 from Chernozhukov, V. & Hansen, C. & Kallus, N. & Spindler, M. & Syrgkanis, V. (2024): Applied Causal Inference Powered by ML and AI (https://causalml-book.org)
    
 
 ### Main Results:
