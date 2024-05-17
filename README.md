@@ -21,7 +21,7 @@ I train multiple $\text{CATE}$ estimators, including *S-Learners*,*T-Learners*, 
    See also Chapter 15.4 from Chernozhukov, V. & Hansen, C. & Kallus, N. & Spindler, M. & Syrgkanis, V. (2024): Applied Causal Inference Powered by ML and AI (https://causalml-book.org)  
    
 
-For policy evaluation I rely on the **Inverse Propensity Scoring** method
+For policy evaluation I rely on the **Inverse Propensity Scoring** method. To estimate the uncertainity around policy performance, I run
    
 
 ### Main Results:
