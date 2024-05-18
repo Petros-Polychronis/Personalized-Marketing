@@ -10,6 +10,11 @@ I am working with a real experimental [dataset](https://ods.ai/competitions/x5-r
 
 ## Data
 
+The datasets that we load are:
+- $\text{X}$: the customer features ,
+- $\text{T}$: the treatment indicator showing whether a customer received the sms or not ,
+- $\text{Y}$ and the response indicator showing whether a customer performed the action under study or not 
+
 ---
 
 ## Methods
