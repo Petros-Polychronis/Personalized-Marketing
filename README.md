@@ -24,7 +24,7 @@ I train multiple $\text{CATE}$ estimators, including **S-Learners**,**T-Learners
   
 For policy evaluation I rely on the **Inverse Propensity Scoring** method:
 
-$\text{Profits}(\pi) = \sum_{i=1}^{N} {\frac{1-T_i}{1-e(x_i)} (1 - \pi(x_i)) \cdot RY_i + \frac{T_i}{e(x_i}\pi(x_i) \cdot (RY_i - C)}$
+$\text{Profits}(\pi) = \sum_{i=1}^n {\frac{1-T_i}{1-e(x_i)} (1 - \pi(x_i)) \cdot RY_i + \frac{T_i}{e(x_i)}\pi(x_i) \cdot (RY_i - C)}$
 
 To estimate the uncertainity around policy performance, I 
    
