@@ -28,9 +28,11 @@ $$\text{Profits}(\pi) = \sum_{i=1}^n \left ( \frac{1-T_i}{1-e(x_i)} (1 - \pi(x_i
 
 where $\pi(x)$, is a policy that maps covariate vectos $X$ to $`\{0,1\}`$
 
-*Note*: If $e(x)$ was not known, we would have to rely on doubly-robust scores $\Gamma_i$ as outlined by Athey and Wager in https://arxiv.org/abs/1702.02896
+*Note*: If $e(x)$ was not known, we would have to rely on doubly-robust scores $\Gamma_i$ as outlined by Athey and Wager in https://arxiv.org/abs/1702.02896  
 
-To estimate the uncertainity around policy performance, I 
+
+
+To estimate the uncertainity around policy performance, I rely on boostrapping, whereby in each trial $t$, I randomly split the original dataset into $X_{\text{train}}$ and $X_{\text{test}}$ and then I create bootstrapped versions of them $X'_{\text{train}}$ and $X'_{\text{test}}$ and work with those. The reason for this split is that in that way, I make sure that none of the samples in the test set is also present in the train set. For the simulations, I conduct 50 trials for 4 different $\frac{C}{R}$ thresholds, namely $[3.33%, 4%, 5%, 6.67%]$
    
 
 ### Main Results:
