@@ -32,7 +32,7 @@ where $\pi(x)$, is a policy that maps covariate vectos $X$ to $`\{0,1\}`$
 
 
 
-To estimate the uncertainity around policy performance, I rely on boostrapping, whereby in each trial $t$, I randomly split the original dataset into $X_{\text{train}}$ and $X_{\text{test}}$ and then I create bootstrapped versions of them $X_{\text{B-train}}$ and $X_{\text{B-test}}$ and work with those. The reason for this split is that in that way, I make sure that none of the samples in the test set is also present in the train set. For the simulations, I conduct 50 trials for 4 different $\frac{C}{R}$ thresholds, namely $\[ 3.33\text{\%}, 4\text{\%}, 5\%, 6.67\% \]$, all of which are above the $\text{ATE}$ achieved by the experiment.
+To estimate the uncertainity around policy performance, I rely on boostrapping, whereby in each trial $t$, I randomly split the original dataset into $X_{\text{train}}$ and $X_{\text{test}}$ and then I create bootstrapped versions of them $X_{\text{B-train}}$ and $X_{\text{B-test}}$ and work with those. The reason for this split is that in that way, I make sure that none of the samples in the test set is also present in the train set. For the simulations, I conduct 50 trials for 4 different $\frac{C}{R}$ thresholds, namely $\[ 0.33, 0.4, 0.5, 0.667 \]$, all of which are above the $\text{ATE}$ achieved by the experiment.
    
 
 ### Main Results:
