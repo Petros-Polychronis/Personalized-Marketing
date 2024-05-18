@@ -53,7 +53,7 @@ The Average Treatment Effect $\text{ATE}$ of the experiment is at 3.12%. For the
 
 ![aggregate_performance](/figures/aggregate_performance.png)
 
-We see that on average the **S-Learner** coupled with the **second policy** learning method produces the highest average profits over the status quo of treating noone. Treating noone is more profitable than treating everyone in these cases as the cost-to-reward ratios under study are higher than the $\text{ATE}$. We also notice that as the cost-to-reward ratio increases, the average profits decrease and because the standard deviation remains high, a higher proportion of the time does targeting result in losses. In essence, this shows that the models cannot effectively identify samples with the required uplift for profitability. Of course, this intervention is rather simple (sms), hence we do not anticipate necessarily that it will be particularly effective for some.
+We see that on average the **S-Learner** coupled with the **second policy** learning method produces the highest average profits over the status quo of treating noone. Treating noone is more profitable than treating everyone in these cases as the cost-to-reward ratios under study are higher than the $\text{ATE}$. We also notice that as the cost-to-reward ratio increases, the average profits decrease and because the standard deviation remains high, a higher proportion of the time does targeting result in losses. In essence, this shows that the models cannot effectively identify samples with the required uplift for profitability. Of course, this intervention is rather simple (sms), hence we do not anticipate necessarily that it will be particularly effective for any of the sample profiles.
 
 
    
