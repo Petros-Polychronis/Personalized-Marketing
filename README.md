@@ -48,7 +48,7 @@ To estimate the uncertainity around policy performance, I rely on boostrapping, 
 
 
 ## Main Results
-The Average Treatment Effect $\text{ATE}$ of the experiment is at 3.12% percent. For the promotion to be profitable when targeting all the customer base as it is, the cost-to-revenue ratio $\frac{C}{R}$ needs to be below 3.12% (or 0.0312). If it is above, then targeting needs to be implemented in order for the promotion to have a positive ROI. Moreover, the theoreticaly optimal solution in terms of expected profit maximization would be target any sample with $\tau(x) \geq 0.0312$. Below, I show the results from running 50 iterations for the four different and difficult (because all of them are higher than the $\cate{ATE}$) thresholds $\[ 0.33, 0.4, 0.5, 0.667 \]$
+The Average Treatment Effect $\text{ATE}$ of the experiment is at 3.12%. For the promotion to be profitable when targeting all the customer base as it is, the cost-to-revenue ratio $\frac{C}{R}$ needs to be below 3.12% (or 0.0312). If it is above, then targeting needs to be implemented in order for the promotion to have a positive ROI. Moreover, the theoreticaly optimal solution in terms of expected profit maximization would be target any sample with $\tau(x) \geq 0.0312$. Below, I show the results from running 50 iterations for the four different and difficult (because all of them are higher than the $\cate{ATE}$) thresholds $\[ 0.33, 0.4, 0.5, 0.667 \]$
 
 
 
