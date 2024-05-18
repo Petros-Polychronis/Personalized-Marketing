@@ -48,16 +48,22 @@ To estimate the uncertainity around policy performance, I rely on boostrapping, 
 
 
 ## Main Results
-The Average Treatment Effect $\text{ATE}$ of the experiment is at 3.12%. For the promotion to be profitable when targeting all the customer base as it is, the cost-to-revenue ratio $\frac{C}{R}$ needs to be below 3.12% (or 0.0312). If it is above, then targeting needs to be implemented in order for the promotion to have a positive ROI. Moreover, the theoreticaly optimal solution in terms of expected profit maximization would be target any sample with $\tau(x) \geq 0.0312$. Below, I show the results from running 50 iterations for the four different and difficult (because all of them are higher than the $\cate{ATE}$) thresholds $\[ 0.033, 0.04, 0.05, 0.0667 \]$
+The Average Treatment Effect $\text{ATE}$ of the experiment is at 3.12%. For the promotion to be profitable when targeting all the customer base as it is, the cost-to-revenue ratio $\frac{C}{R}$ needs to be below 3.12% (or 0.0312). If it is above, then targeting needs to be implemented in order for the promotion to have a positive ROI. Moreover, the theoreticaly optimal solution in terms of expected profit maximization would be target any sample with $\tau(x) \geq 0.0312$. Below, I show the average profits scaled on the size of the original dataset as obtained by the best 5 $\text{CATE}$ methods after running 50 bootstrap iterations for the four different thresholds $\[ 0.033, 0.04, 0.05, 0.0667 \]$
 
 
 ![aggregate_performance](/figures/aggregate_performance.png)
 
-We see that on average the **S-Learner** coupled with the **second policy** learning method produces the highest average profits over the status quo of treating noone. Treating noone is more profitable than treating everyone in these cases as the cost-to-reward ratios under study are higher than the $\text{ATE}$.
+We see that on average the **S-Learner** coupled with the **second policy** learning method produces the highest average profits over the status quo of treating noone. Treating noone is more profitable than treating everyone in these cases as the cost-to-reward ratios under study are higher than the $\text{ATE}$. We also notice that as the cost-to-reward ratio increases, the average profits decrease and because the standard deviation remains high, a higher proportion of the time does targeting result in losses. In essence, this shows that the models cannot effectively identify samples with the required uplift for profitability. Of course, this intervention is rather simple (sms), hence we do not anticipate necessarily that it will be particularly effective for some.
 
-Even though the S-Learner performs better on average, we can see below that in many of the iterations, other models gave the best profits. This of course hints at the value of conducting causal-stacking which is to implemented in the near future.
+
+   
+
+
+Even though the S-Learner performs better on average, we can see below that in many of the iterations, other models gave the best profits. This of course hints at the value of conducting causal-stacking which is to implemented in the near future. Each inner quarter circle represents the 50 iterations for a specific cost-to-reward ratio. The middle circle shows which methods performed best and the outer shows which policy learning approach gave the best profits.
 
 ![modelperformance](/figures/model_performance.png)
+
+We see that the causal forests model performs well a lot of th time
 
 
 
