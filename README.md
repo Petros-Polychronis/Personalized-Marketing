@@ -59,7 +59,7 @@ We see that on average the **S-Learner** coupled with the **second policy** lear
    
 
 
-Even though the S-Learner performs better on average, we can see below that in many of the iterations, other models gave the best profits. This of course hints at the value of conducting causal-stacking which is to implemented in the near future. Each inner quarter circle represents the 50 iterations for a specific cost-to-reward ratio. The middle circle shows which methods performed best and the outer shows which policy learning approach gave the best profits.
+Even though the S-Learner performs better on average, we can see below that in many of the iterations, other models gave the best profits. This of course hints at the value of conducting causal-stacking which is to implemented in the near future. Each inner quarter circle represents the 50 iterations for a specific cost-to-reward ratio. The middle circle shows which methods performed best and the outer shows which policy learning approach gave the best profits. It quickly becomes clear that causal forests and the s-learner are the two superior $CATE$ estimators for this dataset.
 
 ![modelperformance](/figures/model_performance.png)
 
