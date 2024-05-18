@@ -26,7 +26,7 @@ For policy evaluation I rely on the **Inverse Propensity Scoring** method:
 
 $$\text{Profits}(\pi) = \sum_{i=1}^n \left ( \frac{1-T_i}{1-e(x_i)} (1 - \pi(x_i)) \cdot RY_i + \frac{T_i}{e(x_i)}\pi(x_i) \cdot (RY_i - C) \right )$$,  
 
-where $\pi(x)$, is a policy that maps covariate vectos $X$ to $'\{0,1\}'$
+where $\pi(x)$, is a policy that maps covariate vectos $X$ to $`\{0,1\}`$
 
 *Note*: If $e(x)$ was not known, we would have to rely on doubly-robust scores $\Gamma_i$ as outlined by Athey and Wager in https://arxiv.org/abs/1702.02896
 
