@@ -81,9 +81,13 @@ Even though the S-Learner performs better on average, we can see below that in m
 We see that the causal forests model performs well a lot of th time
 
 
-### Shap Values and treatment effects distribution
+### Shap Values
+
+We can get some insights into how the different features contribute to the predicted treatment effects. Below, we look at the estimated contribution of the most important (as judged by the shap algorithm) features from the S-Learner.
 
 ![shap](figures/shap_s_learner.png)
+
+
 
 
 
