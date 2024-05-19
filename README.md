@@ -50,10 +50,14 @@ To estimate the uncertainity around policy performance, I rely on boostrapping, 
 ## Main Results
 
 ### Uplift.
-The top 5 $\text{CATE}$ estimators achieve singificant uplift versus the Average Treatment Effect $\text{ATE}$ at 3.12%.
+The top 5 $\text{CATE}$ estimators achieve singificant uplift versus the Average Treatment Effect $\text{ATE}$ at 3.12%. The red curve shows how much uplift (increase in conversion) we can generate when sampling randomly from the target population. As expected, the uplift achieved is constant and close to the overall $\text{ATE}=$. In contrast, if we follow the light-blue line (correspodning to the best performing model), we can see that when targeting the first 20,000 samples as ranked by the estimated treatment effects, we achieve  an $\text{ATE} \geq$ 5%. For the first 10,000 samples, the model achieves an $\text{ATE}$ close to 8%, and for the first 5000 samples an $\text{ATE}$ close to 10%. The higher the area between the *Random* line and our $\text{CATE}$ estimator, the better the model can target the samples for which the intervention is most effective
 
 ![Uplift_curve](/figures/Lift_curve.png)
 
+
+Below, we see the area under the uplift curve (AUUC) of all our $\text{CATE}$ estimators. AUUC measures the area between the *Random* (=red) line and the lines produced by the various $\text{CATE}$ estimators.
+
+![auuc_performance](/figures/AUUC.png)
 
 
 
