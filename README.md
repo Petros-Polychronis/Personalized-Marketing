@@ -81,5 +81,10 @@ Even though the S-Learner performs better on average, we can see below that in m
 We see that the causal forests model performs well a lot of th time
 
 
+### Shap Values and treatment effects distribution
+
+![shap](figures/shap_s_learner.png)
+
+
 
 
