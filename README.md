@@ -88,7 +88,7 @@ We can get some insights into how the different features contribute to the predi
 ![shap](figures/shap_s_learner.png)
 
 
-
+We see that highest contribution comes from *express_points_spent_per_order*. In particular we see that the lower this value is for a customer, the higher the estimated treatment effect of having received the sms. Similarly, we see that *age* has a straightforward contribution. For older people, the treatment effect is predicted to be higher than for younger people.
 
 
 
