@@ -50,7 +50,7 @@ To estimate the uncertainity around policy performance, I rely on boostrapping, 
 ## Main Results
 
 ### Uplift.
-The top 5 $\text{CATE}$ estimators achieve singificant uplift versus the $ Average Treatment Effect $\text{ATE}$ at 3.12%.
+The top 5 $\text{CATE}$ estimators achieve singificant uplift versus the Average Treatment Effect $\text{ATE}$ at 3.12%.
 
 
 
