@@ -55,7 +55,7 @@ The top 5 $\text{CATE}$ estimators achieve singificant uplift versus the Average
 ![Uplift_curve](/figures/Lift_curve.png)
 
 
-Below, we see the area under the uplift curve (AUUC) of all our $\text{CATE}$ estimators. AUUC measures the area between the *Random* (=red) line and the lines produced by the various $\text{CATE}$ estimators in the chart below.
+Below, we see the area under the uplift curve (AUUC) of all our $\text{CATE}$ estimators. AUUC measures the area between the *Random* (=red) line and the lines produced by the various $\text{CATE}$ estimators in the chart above.
 
 ![auuc_performance](/figures/AUUC.png)
 
